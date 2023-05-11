@@ -1,0 +1,22 @@
+.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bloc{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.contact{
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.ks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
