@@ -20,6 +20,17 @@ if ($statusCode === 200 && $type === 'application/json') {
    // convert the response (here in JSON) to an PHP array
 }
 
+$sunrise = $content['results']['sunrise'];
+
+// To account for summer time  and time zone
+$adjustedSunrise = date('H:i:s', strtotime($sunrise. ' + 2 hours'));
+
+$minutes = date('i', strtotime($adjustedSunrise));
+$hours = date('H', strtotime($adjustedSunrise));
+// Removes 0 when hour can be displayed with one digit
+if (str_starts_with($hours,'0')){
+    $hours =substr($hours, -1, 1);
+}
 ?>
 
 <!DOCTYPE html>
@@ -71,7 +82,12 @@ Au cours de l'après-midi, vous rejoindrez un des nombreux campements nomades o�
 Véritable tradition millénaire, le thé tient une place importante dans la journée.</br>
 Le trek reprendra ensuite en direction du lieu de bivouac, où vous passerez la nuit à la belle étoile. Ce sera alors l'occasion
 de partager des moments de convivialité autour d'un feu de camps.</br>
-Le lendemain, vous assisterez à un lever de soleil magistral sur les dunes.Actuellement, dans le désert, le soleil se lève à xx.
+Le lendemain, vous assisterez à un lever de soleil magistral sur les dunes.Actuellement, dans le désert, le soleil se lève à <?php
+echo $hours;
+?> heures <?php
+echo $minutes;
+?>
+.
 Après ce moment d'émerveillement, vous reprendez la route, en direction de l'Oasis de Gourara, point culminant de ce voyage.
 L'Oasis est un lieu luxuriant, qui réunit toute la faune du désert. Avec un peu de chance, peut-être apercevrez-vous un fennec
 venu se désalterer?</br>
