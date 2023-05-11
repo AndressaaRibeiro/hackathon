@@ -48,12 +48,16 @@ if ($statusCode === 200 && $type === 'application/json') {
     />
 </head>
 <body>
+<div class="image">
+  <img src="pexels-vlada-karpovich-4449318.png" alt="desert" style="width:100%">
+</div>
+<div class = "sand">
     <div class="center">
         <iframe  src="https://www.google.com/maps/d/u/0/embed?mid=15N-IZd0QFzrk3FIALZR2C0XcN81Jw44&ehbc=2E312F" width="90%" height="500rm"></iframe>
     </div>
-    <div>
-    <h2 class = "police_perso">Programme</h2>
-    <p>Au programme de ce voyage, nous vous proposons des vols au départ de Paris, tous les mercredi à 10h.
+    <div class ="d-flex justify-content-center flex-wrap m-4">
+    <h2 class = "freight">Programme</h2>
+    <p class ="aktiv">Au programme de ce voyage, nous vous proposons des vols au départ de Paris, tous les mercredi à 10h.
 Arrivée prévue à l'aéroport de Tindouf quatre heures plus tard. Nous viendrons vous chercher à l'aéroport.
 En chemin vers l'hôtel, vous aurez un aperçu du désert et verrez les premières dunes. Vous aurez du temps l'après-midi
 pour flaner au souk du centre ville et goûter aux spécialités locales.
@@ -74,7 +78,8 @@ Le vol retour est prévu en fin de journée, ce qui vous laisse le temps de prof
 locales dans un salon de thé.
 Tarif : à partir de 1450€ par personne</p>
     </div>
-   <h2 class="contact">Nous contacter</h2>
+    <div class="m-4">
+   <h2 class="contact freight">Nous contacter</h2>
 
     <form class="bloc">
     <!-- 2 column grid layout with text inputs for the first and last names -->
@@ -120,11 +125,13 @@ Tarif : à partir de 1450€ par personne</p>
                  <button type="submit" class="btn btn-primary ">Validation</button>
             </div>
     </form>
-    <div>
-    <h3>Qui sommes nous?</h3>
+        </div>
+    <div class ="d-flex justify-content-center flex-wrap m-4">
+    <h3 class = "freight">Qui sommes nous?</h3>
 <p>Nous sommes une agence locale et familiale qui organisons des treks à dos de dromadaire dans la partie algérienne du Sahara
 Notre souhait est de vous faire découvrir la vie de nomade dans le Sahara et surtout partager des moments authentiques avec
 des locaux. Forts de trente ans d'expérience, nous vous accompagnons dans le voyage de vos rêves, au pays des Milles et Une Nuits.</p>
+        </div>
         </div>
 
     <!-- MDB -->
