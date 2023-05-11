@@ -1,3 +1,6 @@
+body{
+    width: 100vw;
+}
 .center{
     display: flex;
     flex-direction: row;
@@ -44,10 +47,39 @@ font-family:freight ;
     font-family:montserrat ;
     }
 
-.montserrat{
+.aktiv{
     font-family:aktiv ;
     }
 
 .sand{
     background-color: #C7864F;
+}
+
+.sahara {
+    position: absolute;
+    top: 12%;
+    left: 80%;
+    transform: translate(-60%, -50%);
+    font-size: 1rem;
+    color: white;
+    width: 90%;
+  }
+
+.titre {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    font-weight: 800;
+    width: 90%; 
+}
+p{
+    color: white;
+}
+
+footer{
+    height: 2px;
+    font-size: 12px;
 }
