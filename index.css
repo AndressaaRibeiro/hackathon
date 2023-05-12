@@ -1,5 +1,6 @@
 body{
     width: 100vw;
+    color: white !important;
 }
 .center{
     display: flex;
@@ -49,6 +50,8 @@ font-family:freight ;
 
 .aktiv{
     font-family:aktiv ;
+    text-align: justify;
+    padding: 0 15px;
     }
 
 .sand{
@@ -59,7 +62,7 @@ font-family:freight ;
     position: absolute;
     top: 12%;
     left: 80%;
-    transform: translate(-60%, -50%);
+    transform: translate(-55%, -50%);
     font-size: 1rem;
     color: white;
     width: 90%;
@@ -79,7 +82,17 @@ p{
     color: white;
 }
 
+.btn{
+    border: 1px solid white !important;
+    border-radius: 5px !important;
+    color: white !important;
+}
 footer{
     height: 2px;
     font-size: 12px;
 }
+
+.form-label{
+    color: white !important;
+}
+
