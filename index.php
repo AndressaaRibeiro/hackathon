@@ -29,7 +29,7 @@ $minutes = date('i', strtotime($adjustedSunrise));
 $hours = date('H', strtotime($adjustedSunrise));
 // Removes 0 when hour can be displayed with one digit
 if (str_starts_with($hours,'0')){
-    $hours =substr($hours, -1, 1);
+    $hours = substr($hours, -1, 1);
 }
 ?>
 
@@ -71,7 +71,7 @@ if (str_starts_with($hours,'0')){
     </div>
     <div class ="d-flex justify-content-center flex-wrap m-4">
     <h2 class = "freight">Programme</h2>
-    <p class ="aktiv text-center" >Au programme de ce voyage, nous vous proposons des vols au départ de Paris, tous les mercredi à 10h.
+    <p class =" text-center">Au programme de ce voyage, nous vous proposons des vols au départ de Paris, tous les mercredi à 10h.
 Arrivée prévue à l'aéroport de Tindouf quatre heures plus tard. Nous viendrons vous chercher à l'aéroport.
 En chemin vers l'hôtel, vous aurez un aperçu du désert et verrez les premières dunes. Vous aurez du temps l'après-midi
 pour flaner au souk du centre ville et goûter aux spécialités locales.</br>
@@ -82,7 +82,7 @@ Au cours de l'après-midi, vous rejoindrez un des nombreux campements nomades o�
 Véritable tradition millénaire, le thé tient une place importante dans la journée.</br>
 Le trek reprendra ensuite en direction du lieu de bivouac, où vous passerez la nuit à la belle étoile. Ce sera alors l'occasion
 de partager des moments de convivialité autour d'un feu de camps.</br>
-Le lendemain, vous assisterez à un lever de soleil magistral sur les dunes.Actuellement, dans le désert, le soleil se lève à <?php
+Le lendemain, vous assisterez à un lever de soleil magistral sur les dunes. Actuellement, dans le désert, le soleil se lève à <?php
 echo $hours;
 ?> heures <?php
 echo $minutes;
