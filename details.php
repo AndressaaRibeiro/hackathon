@@ -81,9 +81,7 @@ if (str_starts_with($hours, '0')) {
                                                                                                                                       echo $hours;
                                                                                                                                       ?> heures <?php
                                                                                                                                                 echo $minutes;
-                                                                                                                                                ?>
-        .
-        Après ce moment d'émerveillement, vous reprendez la route, en direction de l'Oasis de Gourara, point culminant de ce voyage.
+                                                                                                                                                ?>. Après ce moment d'émerveillement, vous reprendez la route, en direction de l'Oasis de Gourara, point culminant de ce voyage.
         L'Oasis est un lieu luxuriant, qui réunit toute la faune du désert. Avec un peu de chance, peut-être apercevrez-vous un fennec
         venu se désalterer?</br>
         L'heure du retour arrive et tout au long de votre trajet vers Tindouf, vous serez entourés par l'immensité du désert et de ses dunes.
