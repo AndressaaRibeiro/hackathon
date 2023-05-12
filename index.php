@@ -126,7 +126,7 @@ if (str_starts_with($hours, '0')) {
         <!-- Number input -->
         <div class="form-outline mb-4">
           <input type="number" id="form6Example6" class="form-control" />
-          <label class="form-label" for="form6Example6">Téléphone</label>
+          <label class="form-label" for="form6Example6">Télephone</label>
         </div>
 
         <!-- Message input -->
