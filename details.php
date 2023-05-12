@@ -49,6 +49,8 @@ if (str_starts_with($hours, '0')) {
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css" rel="stylesheet" />
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.17/dist/css/uikit.min.css" />
 </head>
 
 <body class="sand">
@@ -78,10 +80,8 @@ if (str_starts_with($hours, '0')) {
         Le lendemain, vous assisterez à un lever de soleil magistral sur les dunes.Actuellement, dans le désert, le soleil se lève à <?php
                                                                                                                                       echo $hours;
                                                                                                                                       ?> heures <?php
-          echo $minutes;
-          ?>
-        .
-        Après ce moment d'émerveillement, vous reprendez la route, en direction de l'Oasis de Gourara, point culminant de ce voyage.
+                                                                                                                                                echo $minutes;
+                                                                                                                                                ?>. Après ce moment d'émerveillement, vous reprendez la route, en direction de l'Oasis de Gourara, point culminant de ce voyage.
         L'Oasis est un lieu luxuriant, qui réunit toute la faune du désert. Avec un peu de chance, peut-être apercevrez-vous un fennec
         venu se désalterer?</br>
         L'heure du retour arrive et tout au long de votre trajet vers Tindouf, vous serez entourés par l'immensité du désert et de ses dunes.
@@ -91,6 +91,19 @@ if (str_starts_with($hours, '0')) {
         Tarif : à partir de 1450€ par personne</p>
     </div>
 
+    <div class="col-lg-3 col-md-12 mb-4">
+      <div class="card">
+        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+            <img src="./assets/images/lune.jpg" class="w-100 cardImage" />
+            <div class="hover-overlay">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </div>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title mb-3 cardTitle text-white text-center">Pour votre prochain voyage, Objectif lune!</h5>
+        </div>
+      </div>
+    </div>
 
     <div class="m-4">
       <h2 class="contact freight">Nous contacter</h2>
@@ -152,5 +165,8 @@ if (str_starts_with($hours, '0')) {
   <p>Hackaton Mai 2023 - Andressa, Fouad, Sébastien & Thuy An</p>
 </footer>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"></script>
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.17/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.17/dist/js/uikit-icons.min.js"></script>
 
 </html>

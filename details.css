@@ -2,6 +2,9 @@ body{
     width: 100vw;
     color: white !important;
 }
+h2, h3{
+    color: white !important;
+}
 .center{
     display: flex;
     flex-direction: row;
@@ -54,7 +57,7 @@ font-family:freight ;
     padding: 0 15px;
     }
 
-.sand{
+.sand, .card-body{
     background-color: #C7864F;
 }
 
@@ -95,4 +98,8 @@ footer{
 .form-label{
     color: white !important;
 }
+footer p {
+    color: black !important;
+}
+
 
