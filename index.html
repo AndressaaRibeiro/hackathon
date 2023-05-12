@@ -1,53 +1,118 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-    <title>Document</title>
-</head>
-<body> -->
-    <!-- <section>
-        <video src="assets/pexels-taryn-elliott-3015514-1920x1080-24fps (online-video-cutter.com).mp4" autoplay loop muted controls></video>
-    </section>
-
-
-    <section>
-        <button>Are you ready? </button>
-    </section> -->
-
-    <!-- <section>
-    <div class="video-wrapper">
-        <video  src="assets/pexels-taryn-elliott-3015514-1920x1080-24fps (online-video-cutter.com).mp4" id="meu-video"></video>
-        <div class="text-overlay"> -->
-          <!-- <button>Are you ready?</button> 
-          <p>Meu Texto</p> -->
-        <!-- </div>
-      </div>
-    </section>
-    <script>script.js</script>
-</body>
-
-</html> -->
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Video de Fundo com Zoom Lento</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <meta name="author" content="Dan Motzenbecker">
+  <meta name="description" content="OriDomi - origami for the web">
+  <meta name="viewport" content="width=device-width, initial-scale=0.6">
+  <title>OriDomi - origami for the web</title>
+  <link href="demo/demo.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet" type="text/css">
+  <link href="favicon.png" rel="icon" type="image/png" >
 </head>
 <body>
-	<video autoplay muted loop id="myVideo">
-		<source src="assets/hackathon-project.mp4" type="video/mp4">
-	</video>
 
-	<div class="content">
-		<!-- <h1>Exemplo de Vídeo de Fundo com Zoom Lento</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor tristique mauris, ac vestibulum eros dapibus eget. Aliquam vel hendrerit velit. Sed ut odio eu turpis interdum tristique non eu mi.</p> -->
-        <a href="/" ><button> Are you ready for this adventure?</button></a>
-	</div>
+  <header>
+    <h1 class="logo">OriDomi<sup>1.1</sup></h1>
+    <h2>The web is flat, but now you can fold it up.</h2>
+    <h5>open source JavaScript library by <a href="https://oxism.com">Dan Motzenbecker</a></h5>
+    <div>
+      <a class="button" href="https://github.com/dmotz/oriDomi">download on github</a>
+      <a class="button" href="docs/oridomi.html">read annotated source</a>
+    </div>
+  </header>
 
-	<script src="script.js"></script>
+  <!-- <ul id="menu">
+    <li><a href="#">OriDomi</a></li>
+    <li><a href="#demos">Demos</a></li>
+    <li><a href="#features">Features</a></li>
+    <li>
+      <a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#initialization">Initialization</a></li>
+        <li><a href="#options">Options</a></li>
+        <li><a href="#effects">Effects</a></li>
+        <li><a href="#callbacks">Callbacks</a></li>
+        <li><a href="#queueing">Queueing</a></li>
+        <li><a href="#touch">Touch</a></li>
+        <li><a href="#content-manipulation">Content manipulation</a></li>
+        <li><a href="#ripple">Ripple</a></li>
+        <li><a href="#responsive">Responsive</a></li>
+        <li><a href="#custom-sizing">Custom panel sizing</a></li>
+        <li><a href="#custom">Custom behavior</a></li>
+        <li><a href="#minutiae">Minuti&aelig;</a></li>
+      </ul>
+    </li>
+    <li><a href="#coda">Coda</a></li>
+  </ul> -->
+
+  <!-- <noscript>
+    <div class="warning">
+      Your browser has JavaScript disabled. OriDomi needs JavaScript turned on
+      to work. Otherwise, all you&rsquo;ll see here are some flat text and images.
+      Visit <a href="https://www.enable-javascript.com">this site</a> if you need
+      help turning it on.
+    </div>
+  </noscript> -->
+
+  <!-- <div id="unsupported" class="warning">
+    Sorry, looks like your browser is too old to support OriDomi, so all you&rsquo;ll
+    see below are some flat images and text. To get the most out of the web,
+    consider upgrading to a browser that supports modern standards. Try
+    <a href="https://www.google.com/chrome">Chrome</a>,
+    <a href="https://www.apple.com/safari">Safari</a>, or
+    <a href="https://www.firefox.com">Firefox</a>.
+  </div> -->
+  <div class = "abc">
+
+  <section id="demos">
+
+    <ul>
+      <li>
+        <div class="demo demo1">
+          <h3>Prêts</h3>
+          <p>pour l'aventure ?</p>
+        </div>
+        <div>
+          <div class="label">accordion(20)</div>
+          <div class="button" data-n="0">Plier</div>
+        </div>
+      </li>
+
+
+        
+      
+
+    </ul>
+
+  </section>
+
+</div>
+  <section>
+    <div>
+      <a href="/video.html"><button class="letsgo">Lets go!</button></a>
+    </div>
+
+
+    </div>
+  </section>
+
+  <script src="oridomi.min.js"></script>
+  <script src="demo/demo.js"></script>
+  <script>
+  var _gaq = _gaq || []
+_gaq.push(['_setAccount', 'UA-33974399-1'])
+_gaq.push(['_trackPageview'])
+;(function() {
+  var ga = document.createElement('script')
+  ga.type = 'text/javascript'
+  ga.async = true
+  ga.src =
+    ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+    '.google-analytics.com/ga.js'
+  var s = document.getElementsByTagName('script')[0]
+  s.parentNode.insertBefore(ga, s)
+})()
+</script>
 </body>
 </html>
